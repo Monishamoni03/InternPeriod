@@ -1,0 +1,78 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh; 
+	/*background-image: url('acc-background.jpg'); 
+	background-repeat: no-repeat;
+	background-size: cover;*/
+
+}
+#create-account-form{
+	width: 400px;
+	padding: 20px;
+	text-transform: uppercase;
+	background-color: lightgray;
+	overflow: hidden;
+}
+.title{
+	margin-bottom: 5px;   /*changed*/
+}
+.input-group{
+	margin: 2px 0;  /*changed*/
+	position: relative;
+}
+.input_group{
+    vertical-align: top;
+}
+.input-group label{
+	display: inline-block;
+	margin-bottom: 2px;   /*changed*/
+}
+.input-group input{
+	display: block;
+	width: 100%;
+	padding: 10px;
+}
+.success input{
+	border: 3px green solid;
+}
+.input-group i{
+	position: absolute;
+	right: 10px;
+	top: 35px;
+	visibility: hidden;
+}
+.error input{
+	border: 3px red solid;
+}
+.success i.fa-check-circle{
+	visibility: visible;
+	color: green;
+}
+.error i.fa-times-circle{
+	visibility: visible;
+	color: red;
+}
+.input-group p{
+	font-size: 15px;
+	color: red;
+	visibility: hidden;
+}
+.error p{
+	visibility: visible;
+}
+.btn{
+	width: 100%;
+	padding: 10px;
+	font-size: 20px;
+	background-color: lightcoral;
+	color: white;
+	text-transform: uppercase;
+	border: none;
+}
