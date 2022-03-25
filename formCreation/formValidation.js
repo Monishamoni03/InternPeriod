@@ -3,28 +3,9 @@ const usernameInput=document.querySelector('#username');
 const emailInput=document.querySelector('#email');
 const phoneNumberInput=document.querySelector('#phonenumber');
 const passwordInput=document.querySelector('#password');
-const confirmPasswordInput=document.querySelector('#confirm-password');
-form.addEventListener('submit',(event)=>{
-	
-	validateForm();
-	if(isFormValid()==true){
-		form.submit();
-	}else{
-		event.preventDefault();
-	}
-});
-function isFormValid(){
-	const inputContainers=form.querySelectorAll('.input-group');
-	let result=true;
-	inputContainers.forEach((container)=>{
-		if(container.classList.contains('error')){
-			result=false;
-		}
-	});
-	return result;
-}
+const confirmPasswordInput=document.querySelector('#confirm_password');
 
-function validateForm(){
+function validateName(){
 	//username
 	if(usernameInput.value.trim()==''){
 		setError(usernameInput,'Name cannot be blank');
@@ -33,7 +14,8 @@ function validateForm(){
 	}else{
 		setSuccess(usernameInput);
 	}
-
+}
+function validateEmail(){
 	//email
 	if(emailInput.value.trim()==''){
 		setError(emailInput,'Email cannot be blank');
@@ -42,6 +24,8 @@ function validateForm(){
 	}else{
 		setError(emailInput,'Invalid email');
 	}
+}
+function validatePhone(){
 	//phone number
 	if(phoneNumberInput.value.trim()==''){
 	   	setError(phoneNumberInput,'Phone number cannot be blank');
@@ -50,6 +34,8 @@ function validateForm(){
     }else{
 	   	setSuccess(phoneNumberInput);
 	}
+}
+function validatePassword(){
 	//password
 	if(passwordInput.value.trim()==''){
 		setError(passwordInput,'Password cannot be blank');
@@ -58,6 +44,8 @@ function validateForm(){
 	}else{
 		setSuccess(passwordInput);
 	}
+}
+function validateConfirmPassword(){
 	//confirm password
 	if(confirmPasswordInput.value.trim()==''){
 		setError(confirmPasswordInput,'Confirm Password cannot be blank');
@@ -94,10 +82,10 @@ function isPhoneNumber(phonenumber){
 	return phoneNumberPattern.test(phonenumber);
 }
 function isPassword(password){
-	var passwordPattern= /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,15}$/;
+	var passwordPattern= /^(?=.[0-9])(?=.[!@#$%^&])[a-zA-Z0-9!@#$%^&]{6,15}$/;
 	return passwordPattern.test(password);
-}
+}  
 /*function isConfirmPassword(confirmpassword){
-	var confirmpasswordPattern= /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,15}$/;
+	var confirmpasswordPattern= /^(?=.[0-9])(?=.[!@#$%^&])[a-zA-Z0-9!@#$%^&]{6,15}$/;
 	return confirmpasswordPattern.test(confirmpassword);
 }*/
