@@ -3,15 +3,14 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+.heading{
+	text-align: center;
+}
 body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh; 
-	/*background-image: url('acc-background.jpg'); 
-	background-repeat: no-repeat;
-	background-size: cover;*/
-
 }
 #create-account-form{
 	width: 400px;
@@ -20,6 +19,33 @@ body{
 	background-color: lightgray;
 	overflow: hidden;
 }
+
+/*.radio{
+	width: 10px;
+	position: relative;
+}
+.radio label{
+	width: 10px;
+	height: 2px;
+	cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px white, 3px 3px 9px rgba(0,0,0,0.5);
+    border: 1px solid black;
+}*/
+.error {
+	color: red;
+	font-size: 14px;
+	margin-top: 6px;
+  }
+.hide {
+	opacity: 0;
+  }
+	
+
 .title{
 	margin-bottom: 5px;   /*changed*/
 }
