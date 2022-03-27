@@ -15,6 +15,7 @@
 		<div class="input-group">
 			<label for="username">Name</label>
 			<input type="text" id="username" placeholder="Type the Name" name="username" onblur="validateName()">
+			<span id="username"></span>
 			<p>Error Message</p>
 		</div>
 		<!--EMAIL-->
@@ -37,41 +38,43 @@
 		</div>
 		<!--Confirm Password-->
 		<div class="input-group">
-			<label for="confirm_password">Confirm Password</label>
-			<input type="password" id="confirm_password" placeholder="Type the Confirm Password" name="confirmpassword" onblur="validateConfirmPassword()">
+			<label for="confirm-password">Confirm Password</label>
+			<input type="password" id="confirm-password" placeholder="Type the Confirm Password" name="confirmpassword" onblur="validateConfirmPassword()">
 			<p>Error Message</p>
 		</div>
-        <!--Date-->
-        <div class="input-group">
-			<label for="date">Date</label>
+                <!--Date-->
+                <div class="input-group">
+			<label for="confirm-password">Date</label>
 			<input type="date" id="date" name="dateEntry">
 			<p>Error Message</p>
 		</div>
-        <!--Resume-->
-        <div class="input-group">
+                <!--Resume-->
+                <div class="input-group">
 			<label for="resume">Resume</label>
 			<input type="file" id="resume" name="resume">
 			<p>Error Message</p>
 		</div>
-        <!--Gender-->
-        <div class="radio">
-			<label for="gender">Gender</label>
+                <!--Gender-->
+                <div class="radio">
+			<label for="gender">Gender</label><br>
 			<input type="radio" id="male" name="gender" value="Male">
-            <label for="gender">Male</label><br>
-            <input type="radio" id="female" name="gender" value="Female">
-            <label for="gender">Female</label>
+                        <label for="gender">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="gender">Female</label><br>
+			<input type="radio" id="other" name="gender" value="Other">
+                        <label for="gender">Other</label>
 		</div>
 		<!--Country-->
 		<div class="input-group">
 			<label for="country">Country</label>
-	      <select id="country">
+	               <select id="country">
 			<option value="india">India</option>
 			<option value="china">China</option>
 			<option value="afghanistan">Afghanistan</option>
 			<option value="australia">Australia</option>
-		  </select>
+		       </select>
 		</div>
-		<button type="submit" class="btn">Submit</button>
+		<button type="submit" class="btn" onclick="submitFunction()">Submit</button>
 
 	</form>
 
