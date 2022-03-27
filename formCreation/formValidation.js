@@ -3,8 +3,11 @@ const usernameInput=document.querySelector('#username');
 const emailInput=document.querySelector('#email');
 const phoneNumberInput=document.querySelector('#phonenumber');
 const passwordInput=document.querySelector('#password');
-const confirmPasswordInput=document.querySelector('#confirm_password');
+const confirmPasswordInput=document.querySelector('#confirm-password');
 
+function submitFunction(){
+	alert("Thank you for filling the form!");
+}
 function validateName(){
 	//username
 	if(usernameInput.value.trim()==''){
@@ -82,10 +85,6 @@ function isPhoneNumber(phonenumber){
 	return phoneNumberPattern.test(phonenumber);
 }
 function isPassword(password){
-	var passwordPattern= /^(?=.[0-9])(?=.[!@#$%^&])[a-zA-Z0-9!@#$%^&]{6,15}$/;
+	var passwordPattern= /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,15}$/;
 	return passwordPattern.test(password);
 }  
-/*function isConfirmPassword(confirmpassword){
-	var confirmpasswordPattern= /^(?=.[0-9])(?=.[!@#$%^&])[a-zA-Z0-9!@#$%^&]{6,15}$/;
-	return confirmpasswordPattern.test(confirmpassword);
-}*/
