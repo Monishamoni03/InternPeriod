@@ -8,7 +8,7 @@ class student{
 }
 class info extends student{
     constructor(name,place){
-        super(name);
+        super(name);              //super keyword-to call above constructor
         this.place=place;
     }
     details(){
