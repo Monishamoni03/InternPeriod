@@ -1,0 +1,243 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh; 
+    overflow: hidden;
+}
+
+.heading {
+    color: tomato;
+    font-size: 20px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 350px;
+    height: 500px;
+    background-color: lightyellow;
+    border-radius: 5px;
+    position: relative;
+    margin: 5% auto;
+    overflow: hidden;
+}
+
+.container form {
+    width: 300px;
+    position: absolute;
+    left: 25px;
+    transition: 1s;
+}
+
+form input {
+    width: 100%;
+    padding: 5px 0;
+    margin: 5px 0;
+    border-bottom: 1px solid palevioletred;
+    outline: none;
+    background: transparent;
+}
+
+.btn-box{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+form button{
+    width: 110px;
+    height: 40px;
+    border-radius: 10px;
+    margin:  0 15px;   /*space btn prev & next*/
+    color: rgb(197, 13, 136);
+    cursor: pointer;
+}
+
+#form-1 {
+    width: 300px;
+	padding: 20px;     /*outside the fields*/
+    overflow: hidden;
+}
+
+#form-2 {
+    left: 500px;
+}
+
+#form-3 {
+    left: 500px;
+}
+
+#form-4 {
+    left: 500px;
+}
+
+#form-5{
+    left: 500px;
+}
+
+.error {
+	color: red;
+	font-size: 14px;
+	margin-top: 6px;
+}
+
+.input-group {
+	margin: 0px 0;  
+	position: relative;
+  /*  display: flex;*/
+  color: aqua;
+}
+
+.input-group label {
+	display: inline-block;
+	margin-bottom: 2px;   
+    color: orchid;
+}
+.input-group input {
+	display: block;
+	width: 100%;      /*i/p box width*/
+	padding: 8px;
+    margin: 0%;
+   /* color: yellowgreen;   /*indication clr*/
+}
+
+.success input{
+	border: 3px green solid;
+}
+.input-group i{
+	position: absolute;
+	right: 10px;
+	top: 35px;
+	visibility: hidden;
+}
+.error input{
+	border: 3px red solid;
+}
+.input-group p{
+	font-size: 15px;
+	color: red;
+	visibility: hidden;
+}
+.error p{
+	visibility: visible;
+}
+
+
+
+.nav ul {
+    margin: 20px;   /*nav bar size*/
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: -50px;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.main-nav {
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: lighter;
+    border-top: 1px solid palevioletred;
+    border-bottom: 1px solid palevioletred;
+    background-color: lightpink;
+    position: fixed;
+    top: 0;/*To place the menus in the top*/
+    width: 100%;
+    padding: -30px;
+}
+
+.main-nav li {
+    padding: 0 4%;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.main-header {
+    height: max-content;
+    padding-top: 80px;  /*moving the container top to main header*/
+    padding-bottom: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.step-row{
+    width: 950px;
+    height: 0px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.step-col{
+    width: 600px;     /*menu bar space btn list*/
+    text-align: center;
+    position: relative;
+    color: darkred;
+}
+
+#progress{
+    position: absolute;
+    width: 200px;
+    height: 200%;
+    background: crimson;
+    transition: 1s;
+}
+/*
+#progress::after{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    border-left: 10px solid blueviolet;
+}*/
+
+/* .radiobutton {
+    
+} */
+
+select {
+    width: 200px;     /*state field*/
+}
+.terms-box {
+    display:block;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid #ddd;
+    background-color: #eee;
+    width: 300px;
+}
+
+.thanks {
+    /*min-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    color: chocolate;
+    background-color: darkgray;
+}
